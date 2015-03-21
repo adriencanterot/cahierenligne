@@ -2,7 +2,7 @@
 
 <p>Pour voir un classement par matière, vous pouvez cliquer sur les noms de matières dans le menu de gauche.</p>
 <br/>
-<table class="zebra-striped">
+<table class="table table-striped table-bordered">
 	<thead>
 		<th>Voir</th>
 		

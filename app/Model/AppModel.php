@@ -1,6 +1,6 @@
 <? class AppModel extends Model {
 	//public $params;
-	var $useDbConfig = "beta";
+	var $useDbConfig = "development";
 	function now() {
 		return date('c');
 	}

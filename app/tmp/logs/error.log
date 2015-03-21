@@ -3000,3 +3000,481 @@
 2011-11-22 00:06:47 Error: [MissingControllerException] Controller class CssController could not be found.
 #0 /Users/adriencanterot/Sites/cakephp2.0/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2011-11-23 21:04:35 Error: [MissingConnectionException] Database connection "SQLSTATE[28000] [1045] Access denied for user 'nutshco_cahier'@'localhost' (using password: YES)" is missing, or could not be created.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Datasource/DboSource.php(244): Mysql->connect()
+#1 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/ConnectionManager.php(98): DboSource->__construct(Array)
+#2 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(3212): ConnectionManager::getDataSource('beta')
+#3 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(1023): Model->setDataSource('beta')
+#4 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(3236): Model->setSource('events')
+#5 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(2458): Model->getDataSource()
+#6 /Users/adriencanterot/Sites/cahierenligne/v2/app/Controller/AppController.php(54): Model->find('all', Array)
+#7 /Users/adriencanterot/Sites/cahierenligne/v2/app/Controller/AppController.php(13): AppController->loadblocks()
+#8 /Users/adriencanterot/Sites/cahierenligne/v2/app/Controller/StudentsController.php(8): AppController->beforeFilter()
+#9 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(605): StudentsController->beforeFilter()
+#10 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#11 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2011-11-23 21:06:00 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-23 21:09:28 Error: [MissingControllerException] Controller class LessController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-23 21:09:44 Error: [MissingControllerException] Controller class LessController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-23 21:10:04 Error: [MissingControllerException] Controller class LessController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-23 21:10:11 Error: [MissingActionException] Action HomesController::less() could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(HomesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-23 21:11:10 Error: [MissingControllerException] Controller class LessController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-23 21:19:54 Error: [MissingViewException] View file "/Users/adriencanterot/Sites/cahierenligne/v2/app/View/Discussions/add.ctp" is missing.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(898): View->render(NULL, NULL)
+#2 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(DiscussionsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-11-23 21:19:56 Error: [MissingViewException] View file "/Users/adriencanterot/Sites/cahierenligne/v2/app/View/Discussions/add.ctp" is missing.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(898): View->render(NULL, NULL)
+#2 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(DiscussionsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-11-23 21:19:57 Error: [MissingViewException] View file "/Users/adriencanterot/Sites/cahierenligne/v2/app/View/Discussions/add.ctp" is missing.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(898): View->render(NULL, NULL)
+#2 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(DiscussionsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-11-23 21:19:58 Error: [MissingViewException] View file "/Users/adriencanterot/Sites/cahierenligne/v2/app/View/Discussions/add.ctp" is missing.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(898): View->render(NULL, NULL)
+#2 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(DiscussionsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-11-23 21:35:54 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Discussion.document_id' in 'on clause'
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Discuss...', Array)
+#2 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Datasource/DboSource.php(645): DboSource->execute('SELECT `Discuss...', Array, Array)
+#3 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Datasource/DboSource.php(1040): DboSource->fetchAll('SELECT `Discuss...', false)
+#4 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(2458): DboSource->read(Object(Discussion), Array)
+#5 /Users/adriencanterot/Sites/cahierenligne/v2/app/Controller/EventsController.php(44): Model->find('all', Array)
+#6 [internal function]: EventsController->view('26')
+#7 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(EventsController), Array)
+#8 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2011-11-24 21:58:45 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-24 22:02:24 Error: [MissingControllerException] Controller class LessController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-24 22:02:31 Error: [MissingControllerException] Controller class LessController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-25 18:39:25 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-25 22:40:18 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-25 22:40:26 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-25 22:40:34 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-25 22:40:38 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-25 22:40:54 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-25 22:40:56 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-25 22:41:33 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-25 22:49:32 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-25 23:19:13 Error: [MissingViewException] View file "/Users/adriencanterot/Sites/cahierenligne/v2/app/View/Discussions/add.ctp" is missing.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(898): View->render(NULL, NULL)
+#2 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(DiscussionsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-11-25 23:19:22 Error: [MissingViewException] View file "/Users/adriencanterot/Sites/cahierenligne/v2/app/View/Discussions/add.ctp" is missing.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(898): View->render(NULL, NULL)
+#2 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(DiscussionsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-11-25 23:19:27 Error: [MissingViewException] View file "/Users/adriencanterot/Sites/cahierenligne/v2/app/View/Discussions/add.ctp" is missing.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(898): View->render(NULL, NULL)
+#2 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(DiscussionsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-11-26 12:53:47 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-26 12:53:53 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-26 12:53:53 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-26 13:11:33 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-26 13:11:41 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-26 13:11:42 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-26 13:11:49 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-26 13:11:54 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-26 13:12:19 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-26 13:13:10 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-27 22:11:29 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-28 22:56:22 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-28 23:14:00 Error: [MissingActionException] Action Documents::stockage() could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Controller/Scaffold.php(150): Scaffold->_scaffold(Object(CakeRequest))
+#1 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(518): Scaffold->__construct(Object(DocumentsController), Object(CakeRequest))
+#2 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(477): Controller->_getScaffold(Object(CakeRequest))
+#3 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#4 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(DocumentsController), Object(CakeRequest), Object(CakeResponse))
+#5 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2011-11-28 23:14:46 Error: [MissingControllerException] Controller class StockageController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-06 22:28:14 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-06 22:28:45 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-08 12:51:51 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-08 18:07:19 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-10 15:53:13 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-10 15:58:10 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'recursive' in 'where clause'
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Discuss...', Array)
+#2 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Datasource/DboSource.php(645): DboSource->execute('SELECT `Discuss...', Array, Array)
+#3 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Datasource/DboSource.php(1040): DboSource->fetchAll('SELECT `Discuss...', false)
+#4 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(2458): DboSource->read(Object(Discussion), Array)
+#5 /Users/adriencanterot/Sites/cahierenligne/v2/app/Controller/DiscussionsController.php(74): Model->find('all', Array)
+#6 [internal function]: DiscussionsController->liste('compact', '2', '79')
+#7 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(DiscussionsController), Array)
+#8 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(DiscussionsController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Core/Object.php(90): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#11 /Users/adriencanterot/Sites/cahierenligne/v2/app/View/Notices/liste.ctp(18): Object->requestAction('/discussions/li...')
+#12 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/View/View.php(598): include('/Users/adrienca...')
+#13 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/View/View.php(365): View->_render('/Users/adrienca...')
+#14 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(898): View->render('liste', NULL)
+#15 /Users/adriencanterot/Sites/cahierenligne/v2/app/Controller/NoticesController.php(22): Controller->render('liste')
+#16 [internal function]: NoticesController->liste()
+#17 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(NoticesController), Array)
+#18 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#19 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(NoticesController), Object(CakeRequest), Object(CakeResponse))
+#20 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Core/Object.php(90): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#21 /Users/adriencanterot/Sites/cahierenligne/v2/app/View/Homes/index.ctp(10): Object->requestAction('/Notices/liste')
+#22 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/View/View.php(598): include('/Users/adrienca...')
+#23 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/View/View.php(365): View->_render('/Users/adrienca...')
+#24 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(898): View->render(NULL, NULL)
+#25 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#26 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(HomesController), Object(CakeRequest), Object(CakeResponse))
+#27 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#28 {main}
+2012-02-07 19:31:41 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-22 19:05:21 Error: [MissingConnectionException] Database connection "SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/Applications/MAMP/tmp/mysql/mysql.sock' (2)" is missing, or could not be created.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Datasource/DboSource.php(244): Mysql->connect()
+#1 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/ConnectionManager.php(98): DboSource->__construct(Array)
+#2 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(3212): ConnectionManager::getDataSource('development')
+#3 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(1023): Model->setDataSource('development')
+#4 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(3236): Model->setSource('events')
+#5 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(2458): Model->getDataSource()
+#6 /Users/adriencanterot/Sites/cahierenligne/v2/app/Controller/AppController.php(54): Model->find('all', Array)
+#7 /Users/adriencanterot/Sites/cahierenligne/v2/app/Controller/AppController.php(13): AppController->loadblocks()
+#8 /Users/adriencanterot/Sites/cahierenligne/v2/app/Controller/StudentsController.php(8): AppController->beforeFilter()
+#9 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(605): StudentsController->beforeFilter()
+#10 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#11 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-02-22 19:13:57 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-22 19:20:45 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-22 19:49:05 Error: [MissingControllerException] Controller class Sprites.lessController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-22 20:57:58 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-22 20:58:17 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-22 20:58:22 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-22 20:58:42 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-22 20:58:46 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-22 21:00:47 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-22 21:04:34 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-22 21:04:36 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-23 20:15:05 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-23 20:15:36 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-18 21:56:51 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-20 21:23:48 Error: [MissingConnectionException] Database connection "SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/Applications/MAMP/tmp/mysql/mysql.sock' (2)" is missing, or could not be created.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Datasource/DboSource.php(244): Mysql->connect()
+#1 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/ConnectionManager.php(98): DboSource->__construct(Array)
+#2 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(3212): ConnectionManager::getDataSource('development')
+#3 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(1023): Model->setDataSource('development')
+#4 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(3236): Model->setSource('events')
+#5 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(2458): Model->getDataSource()
+#6 /Users/adriencanterot/Sites/cahierenligne/v2/app/Controller/AppController.php(54): Model->find('all', Array)
+#7 /Users/adriencanterot/Sites/cahierenligne/v2/app/Controller/AppController.php(13): AppController->loadblocks()
+#8 /Users/adriencanterot/Sites/cahierenligne/v2/app/Controller/StudentsController.php(8): AppController->beforeFilter()
+#9 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(605): StudentsController->beforeFilter()
+#10 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#11 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-03-20 21:24:03 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-20 21:24:42 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-20 21:25:04 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-20 21:25:06 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-20 23:47:20 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-05-26 19:08:25 Error: [MissingConnectionException] Database connection "SQLSTATE[42000] [1049] Unknown database 'cahierenligne_dev'" is missing, or could not be created.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Datasource/DboSource.php(244): Mysql->connect()
+#1 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/ConnectionManager.php(98): DboSource->__construct(Array)
+#2 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(3212): ConnectionManager::getDataSource('development')
+#3 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(1023): Model->setDataSource('development')
+#4 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(3236): Model->setSource('events')
+#5 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(2458): Model->getDataSource()
+#6 /Users/adriencanterot/Sites/cahierenligne/v2/app/Controller/AppController.php(54): Model->find('all', Array)
+#7 /Users/adriencanterot/Sites/cahierenligne/v2/app/Controller/AppController.php(13): AppController->loadblocks()
+#8 /Users/adriencanterot/Sites/cahierenligne/v2/app/Controller/StudentsController.php(8): AppController->beforeFilter()
+#9 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(605): StudentsController->beforeFilter()
+#10 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#11 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-05-26 19:17:22 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-05-26 19:25:57 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-05-27 10:52:23 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-05-27 10:54:30 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-05-27 11:03:10 Error: [MissingControllerException] Controller class ViewController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-05-29 22:39:47 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-03 03:50:54 Error: [MissingConnectionException] Database connection "SQLSTATE[42000] [1049] Unknown database 'cahierenligne_dev'" is missing, or could not be created.
+#0 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/Datasource/DboSource.php(244): Mysql->connect()
+#1 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/ConnectionManager.php(98): DboSource->__construct(Array)
+#2 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(3212): ConnectionManager::getDataSource('development')
+#3 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(1023): Model->setDataSource('development')
+#4 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(3236): Model->setSource('events')
+#5 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(2458): Model->getDataSource()
+#6 /Users/adrien/Sites/cahierenligne/v2/app/Controller/AppController.php(54): Model->find('all', Array)
+#7 /Users/adrien/Sites/cahierenligne/v2/app/Controller/AppController.php(13): AppController->loadblocks()
+#8 /Users/adrien/Sites/cahierenligne/v2/app/Controller/StudentsController.php(8): AppController->beforeFilter()
+#9 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(605): StudentsController->beforeFilter()
+#10 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#11 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/adrien/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-09-03 03:53:10 Error: [MissingConnectionException] Database connection "SQLSTATE[42000] [1049] Unknown database 'cahierenligne_dev'" is missing, or could not be created.
+#0 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/Datasource/DboSource.php(244): Mysql->connect()
+#1 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/ConnectionManager.php(98): DboSource->__construct(Array)
+#2 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(3212): ConnectionManager::getDataSource('development')
+#3 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(1023): Model->setDataSource('development')
+#4 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(3236): Model->setSource('events')
+#5 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(2458): Model->getDataSource()
+#6 /Users/adrien/Sites/cahierenligne/v2/app/Controller/AppController.php(54): Model->find('all', Array)
+#7 /Users/adrien/Sites/cahierenligne/v2/app/Controller/AppController.php(13): AppController->loadblocks()
+#8 /Users/adrien/Sites/cahierenligne/v2/app/Controller/StudentsController.php(8): AppController->beforeFilter()
+#9 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(605): StudentsController->beforeFilter()
+#10 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#11 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/adrien/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-09-03 03:54:33 Error: [MissingConnectionException] Database connection "SQLSTATE[42000] [1049] Unknown database 'cahierenligne_dev'" is missing, or could not be created.
+#0 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/Datasource/DboSource.php(244): Mysql->connect()
+#1 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/ConnectionManager.php(98): DboSource->__construct(Array)
+#2 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(3212): ConnectionManager::getDataSource('development')
+#3 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(1023): Model->setDataSource('development')
+#4 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(3236): Model->setSource('events')
+#5 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(2458): Model->getDataSource()
+#6 /Users/adrien/Sites/cahierenligne/v2/app/Controller/AppController.php(54): Model->find('all', Array)
+#7 /Users/adrien/Sites/cahierenligne/v2/app/Controller/AppController.php(13): AppController->loadblocks()
+#8 /Users/adrien/Sites/cahierenligne/v2/app/Controller/StudentsController.php(8): AppController->beforeFilter()
+#9 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(605): StudentsController->beforeFilter()
+#10 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#11 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/adrien/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-09-03 03:55:26 Error: [MissingTableException] Database table events for model Event was not found.
+#0 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(3236): Model->setSource('events')
+#1 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(2458): Model->getDataSource()
+#2 /Users/adrien/Sites/cahierenligne/v2/app/Controller/AppController.php(54): Model->find('all', Array)
+#3 /Users/adrien/Sites/cahierenligne/v2/app/Controller/AppController.php(13): AppController->loadblocks()
+#4 /Users/adrien/Sites/cahierenligne/v2/app/Controller/StudentsController.php(8): AppController->beforeFilter()
+#5 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(605): StudentsController->beforeFilter()
+#6 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#7 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#8 /Users/adrien/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-09-03 03:59:42 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adrien/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-16 04:44:36 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adrien/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-16 05:05:20 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adrien/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-12 01:10:41 Error: [MissingConnectionException] Database connection "SQLSTATE[42000] [1049] Unknown database 'cahierenligne_dev'" is missing, or could not be created.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Datasource/DboSource.php(244): Mysql->connect()
+#1 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/ConnectionManager.php(98): DboSource->__construct(Array)
+#2 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(3212): ConnectionManager::getDataSource('development')
+#3 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(1023): Model->setDataSource('development')
+#4 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(3236): Model->setSource('events')
+#5 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(2458): Model->getDataSource()
+#6 /Users/adriencanterot/Sites/cahierenligne/v2/app/Controller/AppController.php(54): Model->find('all', Array)
+#7 /Users/adriencanterot/Sites/cahierenligne/v2/app/Controller/AppController.php(13): AppController->loadblocks()
+#8 /Users/adriencanterot/Sites/cahierenligne/v2/app/Controller/StudentsController.php(8): AppController->beforeFilter()
+#9 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(605): StudentsController->beforeFilter()
+#10 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#11 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-11-12 01:33:00 Error: [MissingTableException] Database table events for model Event was not found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(3236): Model->setSource('events')
+#1 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(2458): Model->getDataSource()
+#2 /Users/adriencanterot/Sites/cahierenligne/v2/app/Controller/AppController.php(54): Model->find('all', Array)
+#3 /Users/adriencanterot/Sites/cahierenligne/v2/app/Controller/AppController.php(13): AppController->loadblocks()
+#4 /Users/adriencanterot/Sites/cahierenligne/v2/app/Controller/StudentsController.php(8): AppController->beforeFilter()
+#5 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(605): StudentsController->beforeFilter()
+#6 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#7 /Users/adriencanterot/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#8 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-12-08 01:28:00 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 01:28:31 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-25 21:24:24 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-25 21:24:52 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-25 21:41:08 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-25 21:44:25 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-25 21:44:38 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-25 21:55:07 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/adriencanterot/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 10:22:00 Error: [MissingConnectionException] Database connection "SQLSTATE[42000] [1049] Unknown database 'cahierenligne_dev'" is missing, or could not be created.
+#0 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/Datasource/DboSource.php(244): Mysql->connect()
+#1 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/ConnectionManager.php(98): DboSource->__construct(Array)
+#2 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(3212): ConnectionManager::getDataSource('development')
+#3 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(1023): Model->setDataSource('development')
+#4 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(3236): Model->setSource('events')
+#5 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Model/Model.php(2458): Model->getDataSource()
+#6 /Users/adrien/Sites/cahierenligne/v2/app/Controller/AppController.php(54): Model->find('all', Array)
+#7 /Users/adrien/Sites/cahierenligne/v2/app/Controller/AppController.php(13): AppController->loadblocks()
+#8 /Users/adrien/Sites/cahierenligne/v2/app/Controller/StudentsController.php(8): AppController->beforeFilter()
+#9 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Controller/Controller.php(605): StudentsController->beforeFilter()
+#10 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#11 /Users/adrien/Sites/cahierenligne/v2/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/adrien/Sites/cahierenligne/v2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}

@@ -1,7 +1,7 @@
 <?
 class Document extends AppModel {
 	
-	var $belongsTo = array("Subject", "Student", "Classroom");
+	public $belongsTo = array("Subject", "Student", "Classroom");
     public $hasAndBelongsToMany = "Event";
 	public $hasMany = array(
         'Discussion' => array(
@@ -14,19 +14,21 @@ class Document extends AppModel {
     );
 	public $bodycontent = '';
 	
-	function beforeSave() {
+	public function beforeSave() {
 		if($this->params['action'] != 'edit') {
-			$this->record['Document']['issue_date'] = $this->now();
+			$this->data['Document']['issue_date'] = $this->now();
 			$this->bodycontent = $this->record['Document']['body'];
 			if(!empty($this->bodycontent)) { 
-				$this->record['Document']['body'] = '/cahierenligne/stockage/'.$this->getfoldername().'/bodycontent.html';
+				$this->data['Document']['body'] = true;
+			} else {
+				$this->data['Document']['body'] = false;
 			}
 		}
 		return true;
 	}
 	
-	function aftersave() {
-		if(!empty($this->record['Document']['file'])) {
+	public function aftersave() {
+		if(!empty($this->data['Document']['file'])) {
 			$i = 0;
 			$foldername = $this->getfoldername();
 			mkdir(WWW_ROOT.'stockage/'.$foldername);
@@ -36,9 +38,9 @@ class Document extends AppModel {
 				fclose($handle);
 			}
 			
-			if($this->record['Document']['file'][0]['name'] == '') { return true;}
+			if($this->data['Document']['file'][0]['name'] == '') { return true;}
 			$o = 0;
-			foreach($this->record['Document']['file'] as $file) {
+			foreach($this->data['Document']['file'] as $file) {
 				
 				$fileinfo = pathinfo($file['name']);
 				$filename = $o.'.'.$fileinfo['extension'];
@@ -59,7 +61,7 @@ class Document extends AppModel {
 		return true;
 	}
         
-        function related($event) { //deprecated
+        public function related($event) { //deprecated
             $this->recursive = 0;
             $related = array();
             foreach($event['Document'] as $e) {
@@ -68,7 +70,7 @@ class Document extends AppModel {
             return $related;
         }
 		
-		function getfoldername() {
+		public function getfoldername() {
 			$i = 0;
 			while(is_dir(WWW_ROOT.'stockage/'.$i)) { $i++; }
 			return $i;

@@ -3,6 +3,6 @@
     echo $this->Html->link($element['Notification']['text'], $element['Notification']['route']).'<br/ >';
 }
 }else{ ?>
-<div class="page-header"><h3>Notifications</h3></div>
+<h3>Notifications</h3>
 <p>Vous n'avez aucune notifications pour le moment.</p>
 <? } ?>

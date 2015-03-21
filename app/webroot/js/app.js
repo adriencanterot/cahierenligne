@@ -11,6 +11,8 @@ $(document).ready(function() {
 	$('.spinner').hide();
 	$('.annonce-discussion').hide();
 
+	var siteroot = $("#siteroot").text();
+
 	// $('.ajax-subjects').live('click', function() {
 
 	// 	$.get($(this).attr('href'), {}, function(data) {
@@ -34,16 +36,15 @@ $(document).ready(function() {
 				$('#submit_notice_container .spinner').show();
 			},
 			success : function() {
-				$(obj).parent().slideUp(function() {
-					$.get('/cakephp2.0/notices/liste', {}, function(data) {
-						$('#annoncelist').fadeOut(function() {
-							$("#annoncelist").empty().append(data);
-							$('.annonce-discussion').hide();
-							$("#annoncelist").fadeIn();
+				$(obj).parent().slideUp();
+				$.get(siteroot+'notices/liste', {}, function(data) {
+					$("#annoncelist").empty().append(data);
+					$('.annonce-discussion').hide();
+					$("#submit_discussion").css("position:relative; top:-20px");
 
-						})
-					})
+					
 				})
+				
 			},
 			complete: function() {
 				$('#submit_notice').show();
@@ -69,7 +70,7 @@ $(document).ready(function() {
 
 			},
 			success : function() {
-				$.get('/cakephp2.0/events/liste', {}, function(data) {
+				$.get(siteroot+'events/liste', {}, function(data) {
 					$('#eventlist').fadeOut(function() {
 						$("#eventlist").empty().append(data);
 						$
@@ -107,8 +108,10 @@ $(document).ready(function() {
 			},
 
 			success: function() {
-				$.get('/cakephp2.0/discussions/liste/complete/'+$("#input_type_id").val()+"/"+$("#input_reference_id").val(), {}, function(data) {
+
+				$.get(siteroot+'discussions/liste/complete/'+$("#input_type_id").val()+"/"+$("#input_reference_id").val(), {}, function(data) {
 					$("#discussionlist").empty().append(data).slideDown();
+
 				})
 
 			},
@@ -128,6 +131,7 @@ $(document).ready(function() {
 
 function sendnoticediscussion(obj) {
 		element = $(obj);
+		var siteroot = $("#siteroot").text();
 		reference = element.find('.input_reference_id').val();
 		$.ajax({
 			type: 'POST',
@@ -139,7 +143,7 @@ function sendnoticediscussion(obj) {
 			},
 
 			success: function() {
-				$.get('/cakephp2.0/discussions/liste/compact/'+2+"/"+reference, {}, function(data) {
+				$.get(siteroot+'discussions/liste/compact/'+2+"/"+reference, {}, function(data) {
 					$("#discussion-liste-"+reference).empty().append(data).slideDown();
 				})
 
@@ -147,7 +151,7 @@ function sendnoticediscussion(obj) {
 			complete: function() {
 				element.find('.submit_discussion_container .spinner').hide();
 				element.find('#submit_discussion').show();
-				element.find('.DiscussionListeForm textarea').val('');
+				element.find('textarea').val('');
 			}
 		})
 		return false;

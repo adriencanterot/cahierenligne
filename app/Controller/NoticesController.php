@@ -18,7 +18,13 @@
 	}
 
 	function liste() {
-		$this->set('annonces', $this->Notice->find('all', array('order' => 'Notice.id desc', 'limit' => 8)));
+		$this->set('annonces', 
+			$this->Notice->find('all', array(
+				'order' => 'Notice.id desc', 
+				'limit' => 8,
+				'recursive' => 0
+
+				)));
 		$this->render('liste');
 	}
 }?>

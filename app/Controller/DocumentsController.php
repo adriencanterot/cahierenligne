@@ -7,10 +7,10 @@ class DocumentsController extends AppController {
 	}
 	
 	function add() {
-		if(!empty($this->record)) {
-			$this->record['Document']['student_id'] = $this->user();
-			$this->record['Document']['classroom_id'] = $this->classroom();
-			if($this->Document->save($this->record)) {
+		if(!empty($this->request->data)) {
+			$this->request->data['Document']['student_id'] = $this->user();
+			$this->request->data['Document']['classroom_id'] = $this->classroom();
+			if($this->Document->save($this->request->data)) {
 				$this->flash("Votre document a été envoyé, toute la classe peut désormais le voir", '/documents/index');
 			}
 		}
@@ -23,7 +23,8 @@ class DocumentsController extends AppController {
                 $doclist =  $this->Document->DocumentElement->find("all", array("conditions" => array('document_id' => $id)));
 				$this->set('body', $this->Document->find('first', array('conditions' => array('Document.id' => $id))));
                 $this->set('discussion', $this->Discussion->find('all', array('conditions' => array('reference_id' => $id, 'Discussion.classroom_id' => $this->classroom(), 'type_id' => 0))));
-		$this->set('doclist', $doclist);
+                
+				$this->set('doclist', $doclist);
                 $this->set('reference', $id);
 	}
 	

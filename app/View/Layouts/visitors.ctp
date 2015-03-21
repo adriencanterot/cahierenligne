@@ -24,7 +24,7 @@
 	<title>
 		Cahier en Ligne - Bienvenue
 	</title>
-	<link rel="stylesheet/less" href="/cakephp2.0/less/visitors/bootstrap.less">
+	<link rel="stylesheet/less" href="<? echo $this->Html->url('/less/visitors/bootstrap.less');?>">
 
 	<?php
 		echo $this->Html->meta('icon');

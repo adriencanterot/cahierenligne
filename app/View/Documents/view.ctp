@@ -6,10 +6,10 @@
 </div>
 <? }?>
 <? echo $this->Viewer->listdocuments($doclist);?>
-<? if(!empty($body['Document']['body'])) {?>
+<? if($body['Document']['body'] == true) {  ?>
 <h3>Document principal</h3>
 
-<iframe src = "<? echo $body['Document']['body']?>" width = '100%', height = '500px'></iframe>
+<iframe src = "<? echo $this->Html->url('/stockage/'.$body['Document']['id'].'/bodycontent.html');?>" width = '100%', height = '500px'></iframe>
 <? } ?>
 
 <? echo $this->requestAction('/discussions/liste/complete/0/'.$reference);?>

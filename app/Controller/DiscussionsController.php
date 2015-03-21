@@ -64,10 +64,15 @@ class DiscussionsController extends AppController {
         }
 
         function liste($view, $type, $reference) {
-                $this->set('discussionlist', $this->Discussion->find('all', array('conditions' => array(
-                        'type_id' => $type,
-                        'reference_id' => $reference
-                        ))));
+                $this->set('discussionlist', 
+                $this->Discussion->find('all', 
+                array(
+                        'conditions' => array(
+                                'type_id' => $type,
+                                'reference_id' => $reference
+                        ),
+                        'recursive' => 0
+                        )));
 
                 $this->set('reference', $reference);
                 $this->set('type', $type);

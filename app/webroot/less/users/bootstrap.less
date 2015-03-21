@@ -31,15 +31,20 @@ form .input {
 
 .notice_form {
 	background-color: @sidebar-background;
+	background-image : @background-image;
 	.border-radius(5px);
 	margin : 20px;
 	padding : 15px;
 }
 .notice-element {
 	background-color : @sidebar-background;
+	background-image : @background-image;
 	padding : 20px;
 	margin : 20px;
 	.border-radius(5px);
+	.box-shadow(1px 1px 1px rgb(255,255,255));
+	text-shadow: 0 1px 0 white;
+
 }
 strong.red{
 	color : @red;
@@ -126,6 +131,7 @@ textarea.discussion_text {
 	margin-top : -23px;
 	padding : 15px;
 	height : 75px;
+	background-image : @background-image;
 }
 .form_discussion {
 	background-color: @sidebar-background;
@@ -139,6 +145,7 @@ textarea.discussion_text {
 	margin-top : -23px;
 	padding : 15px;
 	height : 75px;	
+	background-image : @background-image;
 }
 
 .spinner {
@@ -166,5 +173,9 @@ textarea.discussion_text {
 }
 #listematiere .matiere a:hover {
 	text-decoration : none;
+}
+.modal-body {
+	max-height : 400px;
+	overflow : auto;
 }
 

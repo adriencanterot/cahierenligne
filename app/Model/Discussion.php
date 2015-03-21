@@ -6,9 +6,9 @@
 class Discussion extends AppModel {
     
 
-    public $belongsTo = array("Document", "Student", "Event", "Classroom");
+    public $belongsTo = array("Student", "Classroom");
 
-	function beforeSave() {
+	public function beforeSave() {
 		if($this->params['action'] != 'edit') {
 			$this->data['Discussion']['issue_date'] = $this->now();
 		}

@@ -26,7 +26,7 @@
 	</title>
 
 
-<link rel="stylesheet/less" href="/cakephp2.0/less/users/bootstrap.less">
+<link rel="stylesheet/less" href="<? echo $this->Html->url('/less-v2/users/bootstrap.less');?>">
 	<?php
 		echo $this->Html->meta('icon');
 
@@ -40,6 +40,9 @@
 		echo $this->Html->script('app');
 		echo $this->Html->script('tablesorter');
 		echo $this->Html->script('less');
+		echo $this->Html->script('plupload/plupload.js');
+		echo $this->Html->script('plupload/plupload.html5.js');
+		echo $this->Html->script('plupload/plupload.html4.js');
 
 
 		//echo $scripts_for_layout;
@@ -55,14 +58,15 @@
 		</script>
 </head>
 <body>
-	<div style='display:hidden'><?php echo $this->element('AddDocument');?></div>
+	
+	<div style='display:hidden;'><?php echo $this->element('AddDocument');?></div>
 	<div class="container-fluid">
 
-		<div class="topbar">
-		<div class="fill">
+		<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
 			<div class="container">
-				<h3><a href="#">Cahier en Ligne - <? echo $this->Session->read('current_user.classroom.School.name');?></a></h3>
-                    <ul class="nav">
+				<a class = "brand pull-left" id = "brand" href="#">Cahier en Ligne - <? echo $this->Session->read('current_user.classroom.School.name');?></a>
+                    <ul class="nav pull-right">
                     	
 							
 							<li<? if($this->request->params['controller'] == 'homes')echo' class="active"'?>>
@@ -111,9 +115,9 @@
                  </div>
             </div>
     	</div>
-    	            <div class ="sidebar" style="padding-top:60px">
+    	        <div class ="sidebar" style="padding-top:60px">
 
-    	            <div class="page-header"><h2> Documents </h2></div>
+    	            <h2> Documents </h2>
                         
 						<? echo $this->Html->link('Ajouter un document','/documents/add', array('class' => 'btn', 'id' => 'addDocument'));?><br/>
 						<br/>
@@ -127,7 +131,7 @@
 
     			<div class="content" style="margin-top:60px">
 
-                    <div class="span12">  
+                    <div class="span9 offset3">  
                     	<?php echo $this->Session->flash(); ?>
 
 	                    <div id="data">
@@ -142,8 +146,8 @@
                                            echo('</pre>'); } ?>
                     </div>
 
-
-                    <div class ="span4">
+					<span style='display:none;' id = "siteroot"><? echo $this->Html->url('/');?></span>
+                    <div class ="span3">
                         <h3>Devoirs à faire</h3>
                         <? echo $this->requestAction('/events/liste'); ?>
 						<br/><hr/><br/>
@@ -185,8 +189,9 @@
 
     		
     	})
+
   });</script>
-	<?php //echo $this->element('sql_dump'); ?>
+	<?php echo $this->element('sql_dump'); ?>
 
 	<? echo $this->Js->writeBuffer();?>
 </body>

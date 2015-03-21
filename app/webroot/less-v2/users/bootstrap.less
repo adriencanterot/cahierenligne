@@ -1,0 +1,223 @@
+/*!
+ * Bootstrap v2.0.1
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+
+// CSS Reset
+@import "reset.less";
+
+// Core variables and mixins
+@import "variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "mixins.less";
+
+// Grid system and page structure
+@import "scaffolding.less";
+@import "grid.less";
+@import "layouts.less";
+
+// Base CSS
+@import "type.less";
+@import "code.less";
+@import "forms.less";
+@import "tables.less";
+
+// Components: common
+// @import "sprites.less";
+@import "dropdowns.less";
+@import "wells.less";
+@import "component-animations.less";
+@import "close.less";
+
+// Components: Buttons & Alerts
+@import "buttons.less";
+@import "button-groups.less";
+@import "alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
+
+// Components: Nav
+@import "navs.less";
+@import "navbar.less";
+@import "breadcrumbs.less";
+@import "pagination.less";
+@import "pager.less";
+
+// Components: Popovers
+@import "modals.less";
+@import "tooltip.less";
+@import "popovers.less";
+
+// Components: Misc
+@import "thumbnails.less";
+@import "labels.less";
+@import "progress-bars.less";
+@import "accordion.less";
+@import "carousel.less";
+@import "hero-unit.less";
+
+// Utility classes
+@import "utilities.less"; // Has to be last to override when necessary
+
+
+form .input {
+  margin-left: 0;
+}
+
+.notice_form {
+	background-color: @sidebar-background;
+	background-image : @background-image;
+	.border-radius(5px);
+	margin : 20px;
+	padding : 15px;
+}
+.notice-element {
+	background-color : @sidebar-background;
+	background-image : @background-image;
+	padding : 20px;
+	margin : 20px;
+	.border-radius(5px);
+	.box-shadow(1px 1px 1px rgb(255,255,255));
+	text-shadow: 0 1px 0 white;
+
+}
+strong.red{
+	color : @red;
+}
+.notice-element .body {
+	padding : 30px;
+}
+.annonce-discussion {
+	
+	padding-left : 30px;
+	padding-bottom : 20px;
+}
+.discussion-element {
+	padding : 5px;
+}
+.annonce-discussion-body {
+	padding : 5px;
+}
+.modal {
+	margin-top : -500px;
+}
+.modal-header, .modal-body, .modal-footer {
+	.opacity(100);
+}
+
+.topbar {
+	h3 {
+		a:hover {
+			display:none;
+		}
+	}
+}
+.sidebar {
+	.box-shadow(0 3px 6px rgba(0,0,0,.25));
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 1px 0 white;
+
+  font-weight: bold;
+  color: @redDark;
+  small {
+    color: @grayLight;
+  }
+
+}
+.cake-debug-output {
+	z-index : 1;
+}
+textarea.discussion_text {
+	width : 100%;
+	height : 40px;
+	position:relative;
+	left : -20px;
+}
+#submit_discussion_container input.btn{
+	position:relative;
+	left : -20px;
+	bottom : 19px;
+	.border-radius(0);
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.submit_discussion_container input.btn{
+	position:relative;
+	left : -20px;
+	bottom : 19px;
+	.border-radius(0);
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+#form_discussion {
+	background-color: @sidebar-background;
+		-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	margin-bottom : 20px;
+	margin-top : -23px;
+	padding : 15px;
+	height : 75px;
+	background-image : @background-image;
+}
+.form_discussion {
+	background-color: @sidebar-background;
+		-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	margin-bottom : 20px;
+	margin-top : -23px;
+	padding : 15px;
+	height : 75px;	
+	background-image : @background-image;
+}
+
+.spinner {
+	position:relative;
+	top : -10px;
+}
+#listematiere {
+	width : 260px;
+	position:relative;
+	left : -45px;
+	font-size : 1.3em;
+	list-style-type : none;
+}
+#listematiere .matiere {
+	padding : 5px;
+
+}
+#listematiere .matiere:hover {
+	background-color : @grayLight;
+	.box-shadow(0px 3px 2px @grayLight);
+	
+}
+#listematiere .matiere a {
+	padding-left : 25px;
+}
+#listematiere .matiere a:hover {
+	text-decoration : none;
+}
+.modal-body {
+	max-height : 400px;
+	overflow : auto;
+}
